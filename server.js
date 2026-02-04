@@ -130,11 +130,12 @@ app.use(cors({
       'http://localhost:8080',
       'http://127.0.0.1:8080',
       'https://bevtech.netlify.app',
-      'http://www.berverlytechnologies.site',
-      null,
-      undefined
+      'https://www.bevtech.netlify.app',  // added www version
     ];
-    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+
+    console.log('CORS request from origin:', origin); // this helps debug
+
+    if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
