@@ -131,6 +131,7 @@ app.use(cors({
       'http://127.0.0.1:8080',
       'https://bevtech.netlify.app',
       'https://www.bevtech.netlify.app',  // added www version
+      'http://www.berverlytechnologies.site',
     ];
 
     console.log('CORS request from origin:', origin); // this helps debug
