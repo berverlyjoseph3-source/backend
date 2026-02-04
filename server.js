@@ -131,7 +131,7 @@ app.use(cors({
       'http://127.0.0.1:8080',
       'https://bevtech.netlify.app',
       'http://www.berverlytechnologies.site',
-      'null',
+      null,
       undefined
     ];
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
